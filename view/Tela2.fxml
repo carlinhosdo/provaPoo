@@ -9,20 +9,20 @@
 
 <AnchorPane id="paneTela2" fx:id="paneTela2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Tela2">
    <children>
-      <Button fx:id="campeonato" layoutX="465.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirCompeonato" prefHeight="44.0" prefWidth="114.0" text="campeonato" />
-      <RadioButton fx:id="rButton1" layoutX="55.0" layoutY="164.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="44.0" prefWidth="114.0" text="Iniciante">
+      <Button fx:id="campeonato" layoutX="454.0" layoutY="325.0" mnemonicParsing="false" onAction="#abrirCompeonato" prefHeight="44.0" prefWidth="114.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="campeonato" />
+      <RadioButton fx:id="rButton1" layoutX="55.0" layoutY="165.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="44.0" prefWidth="114.0" text="Iniciante">
          <toggleGroup>
             <ToggleGroup fx:id="infor" />
          </toggleGroup></RadioButton>
-      <RadioButton fx:id="rButton2" layoutX="55.0" layoutY="208.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="44.0" prefWidth="114.0" text="Amador" toggleGroup="$infor" />
-      <RadioButton fx:id="rButton3" layoutX="55.0" layoutY="252.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="59.0" prefWidth="114.0" text="Profissional" toggleGroup="$infor" />
-      <Label layoutX="94.0" layoutY="50.0" prefHeight="99.0" prefWidth="253.0" text="Informações">
+      <RadioButton fx:id="rButton2" layoutX="55.0" layoutY="209.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="44.0" prefWidth="114.0" text="Amador" toggleGroup="$infor" />
+      <RadioButton fx:id="rButton3" layoutX="55.0" layoutY="251.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="59.0" prefWidth="114.0" text="Profissional" toggleGroup="$infor" />
+      <Label layoutX="99.0" layoutY="55.0" prefHeight="99.0" prefWidth="253.0" text="Informações">
          <font>
-            <Font name="Gayathri Regular" size="39.0" />
+            <Font size="39.0" />
          </font>
       </Label>
-      <Button fx:id="doacao" layoutX="235.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirDoacao" prefHeight="44.0" prefWidth="214.0" text="Agendamento de prancha" />
+      <Button fx:id="doacao" layoutX="230.0" layoutY="324.0" mnemonicParsing="false" onAction="#abrirDoacao" prefHeight="44.0" prefWidth="214.0" style="-fx-background-radius: 20; -fx-background-color: white;" text="Agendamento de prancha" />
       <Label fx:id="minhaLabel" layoutX="201.0" layoutY="175.0" prefHeight="93.0" prefWidth="306.0" />
-      <Button fx:id="confirmacao" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarConfirmacao" text="voltar" />
+      <Button fx:id="confirmacao" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarConfirmacao" style="-fx-background-radius: 10; -fx-background-color: white;" text="voltar" />
    </children>
 </AnchorPane>

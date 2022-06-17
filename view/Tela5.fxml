@@ -13,6 +13,6 @@
           <TableColumn fx:id="modalidade" prefWidth="257.0" text="Modalidade" />
         </columns>
       </TableView>
-      <Button fx:id="vai" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#simbora" text="voltar" />
+      <Button fx:id="vai" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#simbora" style="-fx-background-radius: 20;" text="voltar" />
    </children>
 </AnchorPane>
