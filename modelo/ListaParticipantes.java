@@ -4,16 +4,16 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class ListaParticipantes {
 
-    private SimpleStringProperty nome;
-    private  SimpleStringProperty cpf;
+    private SimpleStringProperty nome = new SimpleStringProperty();
+    private  SimpleStringProperty cpf = new SimpleStringProperty();
 
     public ListaParticipantes() {
     }
 
 
     public ListaParticipantes(String nome, String cpf) {
-        this.nome = new SimpleStringProperty(nome);
-        this.cpf = new SimpleStringProperty(cpf);
+        this.nome.set(nome);
+        this.cpf.set(cpf);
     }
     
 
