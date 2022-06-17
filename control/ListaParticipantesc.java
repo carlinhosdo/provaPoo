@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import modelo.ListaParticipantes;
 public class ListaParticipantesc {
+   
     private List<ListaParticipantes> campeonato= new ArrayList<ListaParticipantes>();
 
        public List<ListaParticipantes> getCampeonato() {
@@ -13,9 +14,9 @@ public class ListaParticipantesc {
         this.campeonato = campeonato;
     }
 
-    public boolean salvar(ListaParticipantes user){
-        if(user != null){
-            campeonato.add(user);
+    public boolean salvar(ListaParticipantes participante){
+        if(participante!= null){
+            campeonato.add(participante);
             return true;
         }
         return false;
