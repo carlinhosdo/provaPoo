@@ -18,9 +18,11 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import modelo.Agendamento;
-
+import control.Agendamentoc;
 
 public class Tela4 implements Initializable{
+
+    private Agendamentoc controle = new Agendamentoc();
 
     @FXML
     private DatePicker DatePicker;
@@ -40,28 +42,42 @@ public class Tela4 implements Initializable{
     @FXML
     private TextField TF_nome;
 
-    Alert latido = new Alert(AlertType.NONE);
+    Alert alerta = new Alert(AlertType.NONE);
     @FXML
     void calculo(ActionEvent event) {
-        LocalDate data = DatePicker.getValue();
-        Calendar manipular = Calendar.getInstance();
-        int dias =Integer.valueOf(TF_dias.getText());
-        java.util.Date dia =  Date.from(data.atStartOfDay(ZoneId.systemDefault()).toInstant());
-        manipular.setTime(dia);
-        manipular.add(Calendar.DAY_OF_MONTH, dias);
-        dia=manipular.getTime();
-        SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy");
-        String data_vencimento=formatar.format(dia);
-        TF_vencimento.setText(data_vencimento);
-        String nome = TF_nome.getText();
-        String  vencimento = TF_vencimento.getText();
-        Agendamento agenda = new Agendamento(nome, vencimento);
-        latido.setAlertType(AlertType.INFORMATION);
-        latido.setHeaderText("informaçoes");
-        latido.setContentText(agenda+"");
-        latido.show();
+        if(TF_nome.getText().equals("") && TF_dias.getText().equals("")){
+            alerta.setAlertType(AlertType.ERROR);
+            alerta.setTitle("leia a informação");
+            alerta.setHeaderText("Erro ao efetuar o cadastro");
+            alerta.setContentText("\nFilho daa puta você não preencheu nada");
+            alerta.show();
+
+        }else{
+            LocalDate data = DatePicker.getValue();
+            Calendar manipular = Calendar.getInstance();
+            int dias =Integer.valueOf(TF_dias.getText());
+            java.util.Date dia =  Date.from(data.atStartOfDay(ZoneId.systemDefault()).toInstant());
+            manipular.setTime(dia);
+            manipular.add(Calendar.DAY_OF_MONTH, dias);
+            dia=manipular.getTime();
+            SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy");
+            String data_vencimento=formatar.format(dia);
+            TF_vencimento.setText(data_vencimento);
+            Agendamento agendamento = new Agendamento();
+            agendamento.setNome(TF_nome.getText());
+            agendamento.setQuantidade(TF_dias.getText());
+            agendamento.setVencimento(TF_vencimento.getText());
+            if(controle.AdicionarAgendamento(agendamento)){
+                alerta.setAlertType(AlertType.INFORMATION);
+                alerta.setTitle("aluguel concluido ");
+                alerta.setHeaderText("Passa gonorreia pros amigos, cê sabe que é brava");
+                alerta.setContentText("\nMano, vai pra puta que pariu,Eu tô aqui pensando no passado na vadia que me traiu");
+                alerta.show();
+                
+            }   
+
+        }
             
-        
     }
 
     @FXML

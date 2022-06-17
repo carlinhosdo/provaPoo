@@ -11,8 +11,6 @@ import javafx.scene.control.ToggleGroup;
 
 public class Tela2 {
 
-    @FXML
-    private Button agendamento;
 
     @FXML
     private Button compeonato;
@@ -67,11 +65,11 @@ public class Tela2 {
     @FXML
     void classificacao(ActionEvent event) {
     if(rButton1.isSelected()){
-        minhaLabel.setText("ok");
+        minhaLabel.setText("Já comentamos acima que surfe é exercício.\nEntrar no mar com o corpo frio e os ligame-\nntos ainda dormentes não é bom. Alongu-\ne-se e esquente o corpo um pouco antes de \nentrar.");
     }else if(rButton2.isSelected()){
-        minhaLabel.setText("tv");
+        minhaLabel.setText("O mar é seu melhor conselheiro. Quando está\nrevolto, está enviando conselhos a você\npara não entrar nele. Preste atenção a\nesses avisos.");
     }else if(rButton3.isSelected()){
-        minhaLabel.setText("mae");
+        minhaLabel.setText("Dormir e acordar cedo, se alimente de forma\nsaudável e faça exercícios funcionais e\nalongamentos");
 
     }
     }

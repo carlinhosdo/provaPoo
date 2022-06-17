@@ -6,7 +6,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import control.UsuarioC;
 import modelo.Usuario;
@@ -17,7 +16,7 @@ public class Tela1 {
     private Button btnTela1;
 
     @FXML
-    private PasswordField idade;
+    private TextField idade; 
 
     @FXML
     private TextField nome;

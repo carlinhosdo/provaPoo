@@ -21,6 +21,7 @@ public class Funcoes {
         cena.getStylesheets().addAll(getClass().getResource(css).toString());
         // Define que a tela que será usada será a mesma da aplicação
         tela = (Stage)((Node)evento.getSource()).getScene().getWindow();
+        //tela.setResizable(true);
         // Define nova cena para a 3tela
         tela.setScene(cena);
         // Mostra a tela

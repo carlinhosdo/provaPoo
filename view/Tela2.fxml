@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Tela2">
+<AnchorPane id="paneTela2" fx:id="paneTela2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Tela2">
    <children>
-      <Button fx:id="compeonato" layoutX="465.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirCompeonato" prefHeight="44.0" prefWidth="114.0" text="compeonato" />
+      <Button fx:id="campeonato" layoutX="465.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirCompeonato" prefHeight="44.0" prefWidth="114.0" text="campeonato" />
       <RadioButton fx:id="rButton1" layoutX="55.0" layoutY="164.0" mnemonicParsing="false" onAction="#classificacao" prefHeight="44.0" prefWidth="114.0" text="Iniciante">
          <toggleGroup>
             <ToggleGroup fx:id="infor" />
@@ -21,9 +21,8 @@
             <Font name="Gayathri Regular" size="39.0" />
          </font>
       </Label>
-      <Button fx:id="doacao" layoutX="354.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirDoacao" prefHeight="44.0" prefWidth="95.0" text="Doação" />
+      <Button fx:id="doacao" layoutX="235.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirDoacao" prefHeight="44.0" prefWidth="214.0" text="Agendamento de prancha" />
       <Label fx:id="minhaLabel" layoutX="201.0" layoutY="175.0" prefHeight="93.0" prefWidth="306.0" />
-      <Button fx:id="agendamento" layoutX="144.0" layoutY="344.0" mnemonicParsing="false" onAction="#abrirAgendamento" prefHeight="44.0" prefWidth="197.0" text="Agendamento de prancha" />
-      <Button fx:id="confirmacao" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarConfirmacao" text="Button" />
+      <Button fx:id="confirmacao" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarConfirmacao" text="voltar" />
    </children>
 </AnchorPane>

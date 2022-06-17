@@ -4,10 +4,17 @@
 -fx-background-repeat: no-repeat;
 }
 #paneTela{
-    -fx-background-image: url("imagem1.jpg");
-    -fx-background-size: 700px;
-    -fx-background-repeat: no-repeat;
-}
-#btntela1{
+    -fx-background-color: #00bde8;
     
+}
+#btnTela1{
+    -fx-background-color: #00e9d8;
+  
+}
+#paneTela2{
+    -fx-background-color: #00bde8;
+}
+#paneTela3{
+    -fx-background-color: #00bde8;
+
 }
